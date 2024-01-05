@@ -9,11 +9,15 @@ module.exports = {
       env: {
         node: true,
       },
-      files: [
-        '.eslintrc.{js,cjs}',
-      ],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
         sourceType: 'script',
+      },
+    },
+    {
+      files: ['tailwind.config.js'],
+      rules: {
+        'global-require': 'off',
       },
     },
   ],
@@ -21,6 +25,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {
-  },
+  rules: {},
 };
+
