@@ -1,1 +1,1 @@
-# Vite + React + TailwindCSS + Zustand
+# Vite + React + TailwindCSS + Zustand + ESLint + Prettier + Husky
