@@ -25,6 +25,10 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'import/no-unresolved': [
+      'error',
+      { ignore: ['@api', '@store', '@pages', '@components', '@constants', '@images', '@svgs', '@router', '@protectedRoutes'] },
+    ],
+  },
 };
-
