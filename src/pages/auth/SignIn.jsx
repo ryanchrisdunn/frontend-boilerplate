@@ -92,11 +92,11 @@ export default function SignIn() {
                 id="rememberMe"
                 name="rememberMe"
                 type="checkbox"
-                className="custom-btn-checkbox"
+                className="custom-checkbox"
               />
               {/* eslint-disable jsx-a11y/label-has-associated-control */}
               <label htmlFor="rememberMe" className="ml-2 block text-sm text-gray-900 cursor-pointer">
-                Remember me
+                Remember Me
               </label>
               {/* eslint-enable jsx-a11y/label-has-associated-control */}
             </div>
@@ -106,7 +106,7 @@ export default function SignIn() {
               <button
                 onClick={() => nav('/reset')}
                 type="button"
-                className="font-semibold text-sky-600 hover:text-sky-500"
+                className="custom-link-primary"
               >
                 Forgot password?
               </button>
@@ -126,7 +126,7 @@ export default function SignIn() {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           Not a member?{' '}
-          <button onClick={() => nav('/signup')} type="button" className="font-semibold leading-6 text-sky-600 hover:text-sky-500">
+          <button onClick={() => nav('/signup')} type="button" className="custom-link-primary">
             Sign up now!
           </button>
         </p>

@@ -152,16 +152,18 @@ export default function SignUp() {
             </div>
           </div>
 
-          <div className="flex items-center">
-              <input
+          <div className="flex h-full items-center text-sm">
+            <input
               id="rememberMe"
               name="rememberMe"
               type="checkbox"
-              className="custom-btn-checkbox"
-              />
-              <p htmlFor="rememberMe" className="ml-2 block text-sm text-gray-900">
-                Remember me
-              </p>
+              className="custom-checkbox"
+            />
+            {/* eslint-disable jsx-a11y/label-has-associated-control */}
+            <label htmlFor="rememberMe" className="ml-2 block text-sm text-gray-900 cursor-pointer">
+              Remember Me
+            </label>
+            {/* eslint-enable jsx-a11y/label-has-associated-control */}
           </div>
 
           <div>
@@ -176,7 +178,7 @@ export default function SignUp() {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           Already have an account?{' '}
-          <button onClick={() => nav('/signin')} type="button" className="font-semibold leading-6 text-sky-600 hover:text-sky-500">
+          <button onClick={() => nav('/signin')} type="button" className="custom-link-primary">
             Sign In!
           </button>
         </p>
