@@ -12,11 +12,11 @@ export default function ResetPassword() {
 
   let contentComponent;
   if (email === null) {
-    contentComponent = <FindAccount />;
-  } else if (code === null) {
-    contentComponent = <ConfirmCode />;
+    contentComponent = <FindAccount />; // Written Below
+  } else if (code === null) { 
+    contentComponent = <ConfirmCode />; // Written Below
   } else {
-    contentComponent = <ConfirmPassword />;
+    contentComponent = <ConfirmPassword />; // Written Below
   }
 
   return (
